@@ -1,0 +1,38 @@
+[
+  {
+    "id": "Acc1",
+    "cpu": 20,
+    "memory": 30,
+    "iops": 10
+  },
+  {
+    "id": "Acc2",
+    "cpu": 40,
+    "memory": 20,
+    "iops": 20
+  },
+  {
+    "id": "Acc3",
+    "cpu": 10,
+    "memory": 10,
+    "iops": 5
+  },
+  {
+    "id": "Acc4",
+    "cpu": 30,
+    "memory": 40,
+    "iops": 25
+  },
+  {
+    "id": "Acc5",
+    "cpu": 15,
+    "memory": 10,
+    "iops": 15
+  },
+  {
+    "id": "Acc6",
+    "cpu": 35,
+    "memory": 30,
+    "iops": 30
+  }
+]
