@@ -1,25 +1,45 @@
-# Advanced Azure-style Storage Load Balancer Simulator
+# 🚀 Azure Storage Load Balancer (Advanced)
 
-This project is inspired by how **Microsoft Azure Storage** handles massive data loads. It simulates how storage accounts (like users uploading files or using cloud apps) can be smartly distributed across multiple backend servers (called nodes) to avoid overload.
+This project simulates how Azure might handle load balancing across storage accounts.
+It distributes CPU, Memory, and IOPS usage across nodes to keep things stable.
 
-Think of it like a traffic police for data — it watches all incoming traffic (requests) and tells them exactly which lane (node) to go to so nothing gets blocked.
+## 🔧 Features
+- Assigns multiple storage accounts to nodes intelligently
+- Balances load using a simulation algorithm
+- Prevents overloading by shifting accounts between nodes
+- Displays a chart showing resource distribution
+- Web app with `/simulate` endpoint
 
-Built using **Python**, **Flask**, and **Matplotlib**, this app mimics basic resource management and load balancing you'd find in cloud systems.
+## 🖥️ Technologies Used
+- Python 3
+- Flask (Web API)
+- Matplotlib (Chart Visualization)
+
+## ▶️ How to Run
+
+1. **Install dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+2. **Start the app**:
+    ```bash
+    python main.py
+    ```
+
+3. **Open your browser** and visit:
+    [http://127.0.0.1:5000/simulate](http://127.0.0.1:5000/simulate)
+
+## 📁 Folder Structure
+```
+📦 delivery-load-balancer-advanced
+┣ 📄 main.py
+┣ 📄 requirements.txt
+┣ 📄 README.md (This file)
+```
+
+## 📌 Note
+This is a simulation—not connected to Azure directly. But it reflects a realistic design idea for handling Azure-like workloads.
 
 ---
-
-## 🚀 What This Project Can Do
-
-- Accepts fake "load" requests (like someone uploading data)
-- Smartly distributes those requests across multiple virtual servers
-- Makes sure no server is overloaded (by checking CPU, memory, IOPS)
-- Shows how much load each server is handling — using a **pie chart**
-- All of this is done via a simple **web API** (Flask backend)
-
----
-
-## ⚙️ How to Run It on Your Machine
-
-**Step 1: Install required Python libraries**
-```bash
-pip install -r requirements.txt
+💡 Built by Ashok P | GitHub: [Ashhhhhh18](https://github.com/Ashhhhhh18)
